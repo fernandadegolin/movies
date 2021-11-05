@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;400;700&family=Zen+Kurenaido&display=swap');
+
+body {
+    background-color: var(--bg);
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+:root {
+    --bg: #F4F4F4;
+    --title: #E4C8BF;
+    --light-red: #DD1B32;
+    --yellow: #f2bd46;
+    --gray: #e5e5e5;
+    --dark-grey: #5F5F5F;
+    --font: #DD1B32;
+  }

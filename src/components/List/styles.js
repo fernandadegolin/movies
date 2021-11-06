@@ -27,8 +27,19 @@ export const MovieListDescription = styled.li`
     margin-top: 2rem;
 `;
 
-
-
 export const MoviePoster = styled.img`
-    max-width: 100%;
+    width: 20vw;
+    border-radius: 1rem;
+    box-shadow: 0 10px 16px var(--shadow);
+
+    @media screen and (max-width: 980px) {
+        width: 100%;
+    }
+`;
+
+export const MovieFavorites = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 1rem;
 `;

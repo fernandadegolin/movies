@@ -25,12 +25,13 @@ export const List = () => {
                         <S.MovieTitle>{item.title}</S.MovieTitle>
                         <li>{item.director}</li>
                         <S.MovieListDescription>{item.description}</S.MovieListDescription>
-                    <div>
+                    <S.MovieFavorites>
                         <Link to={`/details/${item.id}`}>
                             <button>Conheça</button>
                         </Link>
+                            <label>Favorites:</label>
                             <input type={'checkbox'} />
-                    </div>
+                    </S.MovieFavorites>
                 </S.MovieList>
             ))}
         </S.Container>

@@ -8,9 +8,6 @@ body {
 :root {
     --bg: #F4F4F4;
     --shadow: #242323;
-    --light-red: #DD1B32;
-    --yellow: #f2bd46;
-    --gray: #e5e5e5;
-    --dark-grey: #5F5F5F;
-    --font: #DD1B32;
+    --light-shadow: #2423234d;
+    
   }

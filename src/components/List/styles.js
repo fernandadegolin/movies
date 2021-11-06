@@ -15,6 +15,9 @@ export const MovieList = styled.ul`
     list-style: none;
     text-align: center;
     padding: 2rem;
+
+    border-radius: 1rem;
+    box-shadow: 0 8px 10px var(--light-shadow);
 `;
 
 export const MovieTitle = styled.li`

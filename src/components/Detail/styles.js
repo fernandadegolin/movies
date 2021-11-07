@@ -63,5 +63,10 @@ export const Return = styled.a`
 
     img{
         width: 2vw;
+
+        @media screen and (max-width: 980px) {
+            width: 7vw;
+            margin-top: 1rem;
+        }
     }
 `;

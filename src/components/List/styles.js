@@ -64,7 +64,6 @@ export const ButtonDetails = styled.button`
 
     @media screen and (max-width: 980px) {
         width: 20vw;
-        height: auto;
     }
 `;
 

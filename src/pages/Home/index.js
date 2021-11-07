@@ -1,13 +1,16 @@
 import React from 'react';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
 import { List } from '../../components/List';
-import * as S from './styles';
+
 
 
 export function Home() {
     return(
         <div>
-            <S.Title>ZeeMovies</S.Title>
+            <Header />
             <List />
+            <Footer />
         </div>
 
 

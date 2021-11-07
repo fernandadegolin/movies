@@ -28,7 +28,7 @@ export const List = () => {
                         <S.MovieListDescription>{item.description}</S.MovieListDescription>
                     <S.MovieFavorites>
                         <Link to={`/details/${item.id}`}>
-                            <button>Conheça</button>
+                            <S.ButtonDetails>See More</S.ButtonDetails>
                         </Link>
                         <Favourite />
                     </S.MovieFavorites>

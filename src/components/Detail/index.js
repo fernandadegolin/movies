@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { Favourite } from '../Favourite';
-import Tomato from './../../assets/tomato.png'
+import Tomato from './../../assets/tomato.png';
+import Return from './../../assets/seta-curva.png';
 import * as S from './styles';
 
 export const Detail = () => {
@@ -40,13 +41,10 @@ export const Detail = () => {
                     </S.Score>
                 </S.DetailsList>
             </S.Details>
-            
-                {/* <People /> */}
-              
-             
-        
-           
-           <a href="/">Voltar</a>
+           <S.Return href="/">
+               <img src={Return} alt="Return"/>
+           </S.Return>
+                       
         </S.Container>
     )
 

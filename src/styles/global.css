@@ -3,11 +3,14 @@
 body {
     background-color: var(--bg);
     font-family: 'Saira Condensed', sans-serif;
+    margin: 0;
 }
 
 :root {
     --bg: #F4F4F4;
     --shadow: #242323;
     --light-shadow: #2423234d;
+    --white: #fff;
+    --link: #035980;
     
   }

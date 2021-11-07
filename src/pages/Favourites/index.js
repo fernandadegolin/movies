@@ -1,13 +1,16 @@
 import React from 'react';
-import { Detail } from '../../components/Detail';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 
-export function Details() {
+export function Favourites() {
     return(
         <>
         <Header />
-        <Detail />
+        <h1>favoritos</h1>
+
+        <a href="/">
+               back
+        </a>
         <Footer />
         </>
     )

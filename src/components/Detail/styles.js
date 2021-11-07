@@ -52,6 +52,16 @@ export const Score = styled.div`
     h4{
         @media screen and (max-width: 980px) {
             margin: inherit
+        }
     }
+`;
+
+export const Return = styled.a`
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 4rem;
+
+    img{
+        width: 2vw;
     }
 `;

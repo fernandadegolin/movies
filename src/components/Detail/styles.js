@@ -13,6 +13,7 @@ export const Banner = styled.img`
 
     @media screen and (max-width: 980px) {
         width: 100%;
+        margin-bottom: 2rem;
     }
 `;
 

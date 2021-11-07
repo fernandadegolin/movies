@@ -15,7 +15,6 @@ export const FavouriteButton = styled.button`
         @media screen and (max-width: 980px) {
             width: 8vw;
             height: auto;
-            margin-top: 1rem;
         }
     }
 `;

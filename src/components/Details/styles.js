@@ -45,6 +45,7 @@ export const Score = styled.div`
 
         @media screen and (max-width: 980px) {
             width: 10vw;
+            height: auto;
         }
     }
 

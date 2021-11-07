@@ -23,7 +23,7 @@ export const ButtonDetails = styled.button`
 
     @media screen and (max-width: 980px) {
         width: auto;
-        height: auto;
+        
     }
 
     &:hover,

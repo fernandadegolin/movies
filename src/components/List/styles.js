@@ -23,6 +23,7 @@ export const MovieList = styled.ul`
 export const MovieTitle = styled.li`
     font-size: x-large;
     font-weight: 600;
+    margin-top: 1rem;
 `;
 
 export const MovieListDescription = styled.li`
@@ -46,3 +47,4 @@ export const MovieFavorites = styled.div`
     align-items: baseline;
     margin-top: 1rem;
 `;
+

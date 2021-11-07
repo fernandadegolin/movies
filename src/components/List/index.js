@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { Favourite } from '../Favourite';
 import * as S from './styles';
 
 export const List = () => {
@@ -29,8 +30,7 @@ export const List = () => {
                         <Link to={`/details/${item.id}`}>
                             <button>Conheça</button>
                         </Link>
-                            <label>Favorites:</label>
-                            <input type={'checkbox'} />
+                        <Favourite />
                     </S.MovieFavorites>
                 </S.MovieList>
             ))}

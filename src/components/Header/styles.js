@@ -12,6 +12,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     text-align: center;
+    text-decoration: none;
 `;
 
 export const ButtonDetails = styled.button`

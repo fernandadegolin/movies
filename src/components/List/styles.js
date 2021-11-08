@@ -29,6 +29,11 @@ export const MovieTitle = styled.li`
 export const MovieListDescription = styled.li`
     text-align: justify;
     margin-top: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 `;
 
 export const MoviePoster = styled.img`

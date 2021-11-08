@@ -10,8 +10,7 @@ export function Favourite () {
     function isFavourite(){
         setFavourite(!favourite);
     }
-    console.log(isFavourite);
- 
+
     return(
         <S.FavouriteButton onClick={isFavourite}>
             <img src={favourite ? fRed : fBlack} alt="Button favourite" />

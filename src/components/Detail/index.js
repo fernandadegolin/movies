@@ -7,6 +7,7 @@ import * as S from './styles';
 
 export const Detail = () => {
     const [movies, setMovies] = useState({});
+    const [people, setPeople] = useState([]);
     const { id } = useParams();
 
     useEffect(() => {
@@ -14,16 +15,23 @@ export const Detail = () => {
         .then((res) => res.json())
         .then((res) => {
             setMovies(res);
-            
         });
-        
+    }, [id])
+
+    useEffect(() => {
+        fetch (`https://ghibliapi.herokuapp.com/people/?films=${id}`)
+        .then((res) => res.json())
+        .then((res) => {
+            setPeople(res);
+            console.log("Pessoas", res)
+        });
     }, [id])
 
     if (!movies) {
         return null;
     }
 
-    
+
     return(
         <S.Container>
             <S.Details>
@@ -41,6 +49,18 @@ export const Detail = () => {
                     </S.Score>
                 </S.DetailsList>
             </S.Details>
+
+            {/* <div>
+                <h1>Character</h1>
+                {people.map((character) => (
+                    <ul key={character.id}>
+                        <li>{character.name}</li>
+                        <li>{character.gender}</li>
+                        <li>{character.age}</li>
+                    </ul>
+                ))}
+            </div> */}
+
            <S.Return href="/">
                <img src={Return} alt="Return"/>
            </S.Return>

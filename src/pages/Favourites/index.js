@@ -8,8 +8,9 @@ export function Favourites() {
         <Header />
         <h1>favoritos</h1>
 
+        
         <a href="/">
-               back
+        back
         </a>
         <Footer />
         </>

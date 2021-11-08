@@ -40,6 +40,12 @@ export const MoviePoster = styled.img`
     width: 20vw;
     border-radius: 1rem;
     box-shadow: 0 10px 16px var(--shadow);
+    filter: grayscale(80%);
+
+    &:hover,
+    &:focus {
+        filter: none;
+    }
 
     @media screen and (max-width: 980px) {
         width: 100%;

@@ -1,11 +1,11 @@
 ## Projeto React  
-### Hi - Árvore de Itens
+### ZeeMovies
 
-Um experimento com base em consumir API dentro do projeto, recriando uma árvore de itens, onde cada item tem vários outros internos e encadeados.<br>
+Um experimento com base no [STUDIO GHIBLI - API](https://ghibliapi.herokuapp.com/#), recriando uma listagem de filmes e seus detalhes.<br>
 
 <br><br>
 <div  align="center">
-  <img src="https://github.com/fernandadegolin/hi/blob/master/src/assets/imgReadme/readme.png" />
+  <img src="https://github.com/fernandadegolin/movies/blob/master/public/ZeeMovies.png" />
 </div>
 <br>
 <br>
@@ -16,8 +16,10 @@ Um experimento com base em consumir API dentro do projeto, recriando uma árvore
 ###### Ferramentas
 `Styled-components`
 `useState`
+`useEffect`
 `Git para versionamento`
 `GitHub para armazenamento`
+`Deploy para Vercel com CI`
 
 ###### Aplicação
 <ul>

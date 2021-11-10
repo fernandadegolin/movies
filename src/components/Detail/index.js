@@ -49,13 +49,14 @@ export const Detail = () => {
             <S.Details>
                 <S.DetailsList>
                 <h1>Character</h1>
-                {movies.people && movies.people.map((item) => (
+                <h4>coming soon...</h4>
+                {/* {movies.people && movies.people.map((item) => (
                     <ul key={item.id}>
                         <li>{item.name}</li>
                         <li>{item.gender}</li>
                         <li>{item.age}</li>
                     </ul>   
-                    ))}
+                    ))} */}
                     </S.DetailsList>
             </S.Details>
 

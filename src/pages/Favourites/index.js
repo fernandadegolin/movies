@@ -1,4 +1,5 @@
 import React from 'react';
+import { People } from '../../components/Detail/People';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 
@@ -8,7 +9,8 @@ export function Favourites() {
         <Header />
         <h1>favoritos</h1>
 
-        
+       <People />
+       
         <a href="/">
         back
         </a>

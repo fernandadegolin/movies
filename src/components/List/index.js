@@ -4,7 +4,7 @@ import { Favourite } from '../Favourite';
 import * as S from './styles';
 
 export const List = () => {
-    const [movies, setMovies] = useState (null);
+    const [movies, setMovies] = useState ([]);
 
     useEffect(() => {
         fetch('https://ghibliapi.herokuapp.com/films/')

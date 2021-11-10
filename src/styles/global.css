@@ -11,6 +11,10 @@ a{
     color: black;
 }
 
+/* ul, li{
+    list-style-type: none;
+} */
+
 
 :root {
     --bg: #F4F4F4;

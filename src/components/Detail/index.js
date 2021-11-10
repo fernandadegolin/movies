@@ -15,34 +15,29 @@ export const Detail = () => {
         .then((res) => res.json())
         .then((res) => {
             setMovies(res);
-        });
-    }, [id])
+    });
+    }, [id]);
 
+
+    
     useEffect(() => {
-        fetch (`https://ghibliapi.herokuapp.com/people/?films=${id}`)
+        fetch (`https://ghibliapi.herokuapp.com/people/`)
         .then((res) => res.json())
-        .then((res) => {
+        .then((res) =>{
             setPeople(res);
-            console.log("Pessoas", res)
         });
-    }, [id])
-
-    if (!movies) {
-        return null;
-    }
-
+    }, []);
+    
 
     return(
         <S.Container>
             <S.Details>
                 <S.Banner src={movies.movie_banner} alt={movies.title} />
-
                 <S.DetailsList>
                     <Favourite />
                     <h1>{movies.title} | <span> {movies.release_date} </span></h1>
                         <p>{movies.description}</p>
                     <h4>Director: <span> {movies.director} </span>  |  Producer: <span>{movies.producer}</span></h4>
-                
                     <S.Score>
                         <img src={Tomato} alt="Tomato" />
                         <h4>{movies.rt_score}</h4>
@@ -50,21 +45,23 @@ export const Detail = () => {
                 </S.DetailsList>
             </S.Details>
 
-            {/* <div>
-                <h1>Character</h1>
-                {people.map((character) => (
-                    <ul key={character.id}>
-                        <li>{character.name}</li>
-                        <li>{character.gender}</li>
-                        <li>{character.age}</li>
-                    </ul>
-                ))}
-            </div> */}
 
-           <S.Return href="/">
+            <S.Details>
+                <S.DetailsList>
+                <h1>Character</h1>
+                {movies.people && movies.people.map((item) => (
+                    <ul key={item.id}>
+                        <li>{item.name}</li>
+                        <li>{item.gender}</li>
+                        <li>{item.age}</li>
+                    </ul>   
+                    ))}
+                    </S.DetailsList>
+            </S.Details>
+
+        <S.Return href="/">
                <img src={Return} alt="Return"/>
-           </S.Return>
-                       
+        </S.Return>
         </S.Container>
     )
 

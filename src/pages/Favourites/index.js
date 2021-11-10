@@ -1,19 +1,24 @@
 import React from 'react';
-import { People } from '../../components/Detail/People';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
+import Return from './../../assets/seta-curva.png';
+import * as S from './styles';
+
 
 export function Favourites() {
     return(
         <>
         <Header />
-        <h1>favoritos</h1>
+            <S.Container>
+                <h1>Favourite List</h1>
+                <h4>coming soon...</h4>
+            </S.Container>
 
-       <People />
-       
-        <a href="/">
-        back
-        </a>
+
+
+            <S.Return href="/">
+                <img src={Return} alt="Return"/>
+            </S.Return>
         <Footer />
         </>
     )

@@ -1,5 +1,4 @@
-## Projeto React  
-### ZeeMovies
+## ZeeMovies
 
 Um experimento com base no [STUDIO GHIBLI - API](https://ghibliapi.herokuapp.com/#), recriando uma listagem de filmes e seus detalhes.<br>
 

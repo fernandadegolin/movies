@@ -7,7 +7,7 @@ import * as S from './styles';
 
 export const Detail = () => {
     const [movies, setMovies] = useState({});
-    const [people, setPeople] = useState([]);
+    // const [people, setPeople] = useState([]);
     const { id } = useParams();
 
     useEffect(() => {
@@ -18,13 +18,12 @@ export const Detail = () => {
     });
     }, [id]);
 
-
     
     useEffect(() => {
         fetch (`https://ghibliapi.herokuapp.com/people/`)
         .then((res) => res.json())
         .then((res) =>{
-            setPeople(res);
+            // setPeople(res);
         });
     }, []);
     

@@ -24,7 +24,7 @@ Um experimento com base no [STUDIO GHIBLI - API](https://ghibliapi.herokuapp.com
 <ul>
     <li>Faça o clone do projeto: <br>https://github.com/fernandadegolin/hi.git</li>
     <li>Instale as dependências <br>npm install / yarn install</li>
-    <li>Rode: <br>npm start / yarn start</li>
+    <li>Rode: <br>npm start / yarn start</li> 
     <li>Navegue: <br>http://localhost:3000</li>    
 </ul>
 

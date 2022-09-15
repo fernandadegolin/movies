@@ -1,7 +1,7 @@
 ## ZeeMovies
 
 Um experimento com base no [STUDIO GHIBLI - API](https://ghibliapi.herokuapp.com/#), recriando uma listagem de filmes e seus detalhes.<br>
-
+ 
 <br><br>
 <div  align="center">
   <img src="https://github.com/fernandadegolin/movies/blob/master/public/ZeeMovies.png" />
